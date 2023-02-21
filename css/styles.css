@@ -86,6 +86,7 @@ img {
   font-weight: 730;
   font-size: 14px;
   line-height: 1.2;
+  transition: color ease-in-out 250ms;
 }
 
 .info-link {
@@ -93,6 +94,11 @@ img {
   text-align: left;
   padding: 16px 24px;
   border: solid 2px var(--accent-text-color);
+}
+
+.info-heading:hover,
+.info-heading:focus {
+  color: var(--text-color);
 }
 
 .solution-wrapper {
@@ -131,4 +137,10 @@ img {
   font-weight: 730;
   font-size: 16px;
   line-height: 1.2;
+  transition: color ease-in-out 250ms;
+}
+
+.solution-list-link:hover,
+.solution-list-link:focus {
+  color: var(--text-color);
 }
