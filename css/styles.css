@@ -43,6 +43,27 @@ img {
   max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(180deg, var(--gradient-colors));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .right-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: var(--medium-gap);
+    align-items: flex-start;
+  }
+}
+
 .container {
   width: 320px;
   padding-left: var(--small-gap);
@@ -146,7 +167,7 @@ img {
   color: var(--text-color);
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-device-width: 767px) {
   body {
     background: linear-gradient(180deg, var(--gradient-colors));
   }
