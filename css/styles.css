@@ -160,3 +160,32 @@ img {
     width: 608px;
   }
 }
+
+.example-img-span {
+  display: none;
+  font-size: 11px;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.example-text-wrapper {
+  padding: var(--medium-gap);
+  background-color: var(--accent-text-color);
+}
+
+.example-heading {
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: var(--accent-font);
+  font-weight: 730;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--bg-color);
+}
+
+.example-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--additional-text-color);
+}
