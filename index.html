@@ -78,7 +78,31 @@
       </section>
 
       <section class="example">
-        <img class="example-img" src="" alt="Building in Berlin" width="608" height="399" />
+        <picture>
+          <source
+            srcset="./images/bigScreen-pic.jpg 1x, ./images/bigScreen-pic@2x.jpg 2x"
+            media="(min-width: 1313px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="./images/desktop-pic.jpg 1x, ./images/desktop-pic@2x.jpg 2x"
+            media="(min-width: 1057px)"
+            type="image/jpg"
+          />
+          <source
+            srcset="./images/tablet-pic.jpg 1x, ./images/tablet-pic@2x.jpg 2x"
+            media="(min-width: 768px)"
+            type="image/jpg"
+          />
+          <img
+            class="example-img"
+            src="./images/tablet-pic.jpg"
+            alt="Building in Berlin"
+            width="608"
+            height="399"
+          />
+        </picture>
+
         <span class="example-img-span">Rümmele Bauingenieur GmbH | www.ruemmelefacades.com</span>
 
         <div class="example-text-wrapper">
