@@ -182,11 +182,24 @@ img {
   }
 }
 
+.img-thumb {
+  position: relative;
+}
+
 .example-img-span {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
   display: none;
   font-size: 11px;
   line-height: 1.2;
   color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .example-img-span {
+    display: block;
+  }
 }
 
 .example-text-wrapper {
