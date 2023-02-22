@@ -41,6 +41,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -61,15 +62,25 @@ img {
     grid-template-columns: 2fr 3fr;
     gap: var(--medium-gap);
     align-items: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--medium-gap);
+    padding-right: var(--medium-gap);
+    padding-bottom: 40px;
   }
 }
 
 .container {
-  width: 320px;
-  padding-left: var(--small-gap);
-  padding-right: var(--small-gap);
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+    padding-left: var(--small-gap);
+    padding-right: var(--small-gap);
+  }
 }
 
 .section {
@@ -81,6 +92,13 @@ img {
   padding-bottom: var(--medium-gap);
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    padding-left: var(--medium-gap);
+    padding-right: var(--medium-gap);
+  }
+}
+
 .title {
   text-align: left;
   font-family: var(--accent-font);
@@ -88,6 +106,12 @@ img {
   font-weight: 730;
   font-size: 32px;
   line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 .describe-text {
@@ -99,6 +123,12 @@ img {
 
 .describe-text:not(:last-child) {
   margin-bottom: var(--small-gap);
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    padding-bottom: 48px;
+  }
 }
 
 .info-heading {
@@ -129,6 +159,12 @@ img {
   margin-right: auto;
   padding: var(--medium-gap);
   background-color: var(--accent-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .solution-wrapper {
+    width: auto;
+  }
 }
 
 .solution-heading {
